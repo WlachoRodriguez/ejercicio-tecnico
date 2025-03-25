@@ -1,4 +1,5 @@
 export enum Status {
     HOME = 'HOME',
-    LIST = 'LIST'
+    LIST = 'LIST',
+    DETAIL = 'DETAIL'
 }

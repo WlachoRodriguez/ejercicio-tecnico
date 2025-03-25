@@ -8,6 +8,7 @@ export default function Search() {
     const [search, setSearch] = useState("")
 
     const filterSearch = () => {
+        debugger
         setLoading(true)
         setFilterAirports(airports.filter((airport) => airport.airport_name.includes(search)))
         setPage(1)

@@ -13,6 +13,8 @@ interface PageState {
     setFilterAirports: (newFilterAirports: Airport[]) => void;
     page: number;
     setPage: (newPage: number) => void;
+    airport: Airport;
+    setAirport: (newAirport: Airport) => void
 }
 
 const usePageStore = create<PageState>((set) => ({
@@ -25,7 +27,9 @@ const usePageStore = create<PageState>((set) => ({
     filterAirports: [],
     setFilterAirports: (newFilterAirports) => set({ filterAirports: newFilterAirports }),
     page: 1,
-    setPage: (newPage) => set({ page: newPage })
+    setPage: (newPage) => set({ page: newPage }),
+    airport: {} as Airport,
+    setAirport: (newAirport) => set({ airport: newAirport })
 }))
 
 export default usePageStore;
