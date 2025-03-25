@@ -6,6 +6,11 @@
 - next.js: v15.2.3
 
 ### Empezamos ejecutando:
+
+```bash
+npm install
+```
+
 ```bash
 npm run dev
 ```
