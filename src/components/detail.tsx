@@ -15,7 +15,6 @@ export default function AirportInfo() {
 
     useEffect(() => {
         const updateClock = () => {
-            debugger
             const now = new Date();
             const utcTime = now.getTime() + now.getTimezoneOffset() * 60000;
             const localTime = new Date(utcTime + parseFloat(airport.gmt) * 3600000);
